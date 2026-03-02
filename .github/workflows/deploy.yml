@@ -20,6 +20,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          npm run build
         env:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
       # 步驟三：部署
